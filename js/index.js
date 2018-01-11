@@ -1,13 +1,12 @@
 function returnData(data){
-
+  var ret = `<div id='cards'>`
 
   for (i = 0; i < data.length; i++) {
-    var ret = `<div id='card'>`
-
-    ret += `<div id='grabPhrase'>` + data[i].grab_phrase + `</div>`
-    ret += `<div id='job'>` + data[i].job + `</div>`
-    ret += `<div id='degrees'>` + data[i].degree + `</div>`
-    ret += `<ul id='bullets'>`
+    ret += `<div id='card'>`
+    ret += `<div class='grabPhrase'>` + data[i].grab_phrase + `</div>`
+    ret += `<div class='job'>` + data[i].job + `</div>`
+    ret += `<div class='degrees'>` + data[i].degree + `</div>`
+    ret += `<ul class='bullets'>`
 
     for (j = 0; j < data[i].descriptions.length; j++) {
       ret += `<li id='description'>` + data[i].descriptions[j] + `</li>`
@@ -16,6 +15,7 @@ function returnData(data){
     ret += `<br />`
     ret += `</div>`
   }
+  ret += `</div>`
 
 
   return ret
