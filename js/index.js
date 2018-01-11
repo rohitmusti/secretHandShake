@@ -22,7 +22,7 @@ function returnData(data){
   // return "michael is here"
 }
 
-const TEMP = document.getElementById("TESTER")
+const TEMP = document.getElementById("main")
 
 window.onload = () => {
 
