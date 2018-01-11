@@ -1,0 +1,10 @@
+div#cards {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+div#card {
+  width: 400px;
+  background-color: #AAA;
+  margin: 20px;
+}
