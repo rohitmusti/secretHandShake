@@ -9,7 +9,7 @@ function returnData(data){
     ret += `<ul class='bullets'>`
 
     for (j = 0; j < data[i].descriptions.length; j++) {
-      ret += `<li class='description'>` + data[i].descriptions[j] + `</li>`
+      ret += `<li id='description'>` + data[i].descriptions[j] + `</li>`
     }
     ret += `</ul>`
     ret += `<br />`
@@ -22,7 +22,7 @@ function returnData(data){
   // return "michael is here"
 }
 
-const TEMP = document.getElementById("TESTER")
+const TEMP = document.getElementById("main")
 
 window.onload = () => {
 
