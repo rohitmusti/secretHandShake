@@ -1,7 +1,8 @@
 function returnData(data){
-  var ret = `<div id='card'>`
+  var ret = `<div id='cards'>`
 
   for (i = 0; i < data.length; i++) {
+    ret += `<div id='card'>`
     ret += `<div class='grabPhrase'>` + data[i].grab_phrase + `</div>`
     ret += `<div class='job'>` + data[i].job + `</div>`
     ret += `<div class='degrees'>` + data[i].degree + `</div>`
@@ -12,10 +13,11 @@ function returnData(data){
     }
     ret += `</ul>`
     ret += `<br />`
-
+    ret += `</div>`
   }
-
   ret += `</div>`
+
+
   return ret
   // return "michael is here"
 }
