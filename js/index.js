@@ -2,7 +2,7 @@ function returnData(data){
   var ret = `<div id='cards'>`
 
   for (i = 0; i < data.length; i++) {
-    ret += `<div id='card'>`
+    ret += `<div id='card-` + ((i % 3) + 1)  + `'>`
     ret += `<div class='grabPhrase'>` + data[i].grab_phrase + `</div>`
     ret += `<div class='job'>` + data[i].job + `</div>`
     ret += `<div class='degrees'>` + data[i].degree + `</div>`
