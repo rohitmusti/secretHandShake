@@ -24,13 +24,14 @@ li#description {
 }
 
 div#cards {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: .4%;
+  padding-right: .4%;
+  text-align: center;
 }
 
 div#card-1 {
   float: left;
-
+  height: 200px;
   width: 400px;
   background-color: #E4F1FE ;
   color: #22313F;
@@ -42,7 +43,7 @@ div#card-1 {
 
 div#card-2 {
   float: right;
-
+  height: 200px;
   width: 400px;
   background-color: #E4F1FE ;
   color: #22313F;
@@ -53,10 +54,9 @@ div#card-2 {
 }
 
 div#card-3 {
-    /* padding-left: 25% ;
-    padding-right: 25%; */
-  float: right;
-  /* left:-50%; */
+  height: 200px;
+
+  display: inline-block;
   width: 400px;
   background-color: #E4F1FE ;
   color: #22313F;
@@ -68,18 +68,12 @@ div#card-3 {
 
 #card-1:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    display: block;
-
 }
 
 #card-2:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    display: block;
-
 }
 
 #card-3:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    display: block;
-
 }
